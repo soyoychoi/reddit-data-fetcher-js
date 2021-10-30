@@ -1,0 +1,46 @@
+{
+    "env": {
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module"
+    },
+    "extends": ["eslint:recommended"],
+    "rules": {
+        "indent": ["warn", 4, {
+            "SwitchCase": 1
+        }],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+        "no-trailing-spaces": "error",
+        "no-template-curly-in-string": "error",
+        "eqeqeq": "error",
+        "no-empty-function": "error",
+        "no-eq-null": "error",
+        "no-eval": "error",
+        "no-extend-native": "error",
+        "no-implicit-globals": "error",
+        "no-implied-eval": "error",
+        "no-invalid-this": "error",
+        "no-lone-blocks": "error",
+        "no-loop-func": "error",
+        "no-multi-spaces": "error",
+        "no-multi-str": "error",
+        "no-new": "error",
+        "no-new-func": "error",
+        "no-new-wrappers": "error",
+        "no-self-compare": "error",
+        "no-sequences": "error",
+        "no-unused-expressions": "error",
+        "no-useless-concat": "error",
+        "no-label-var": "error",
+        "no-restricted-globals": "error",
+        "no-undefined": "error",
+        "no-multi-assign": "error",
+        "no-prototype-builtins": "off"
+    }
+}

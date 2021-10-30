@@ -1,0 +1,20 @@
+{
+  "name": "reddit-data-fetcher-js",
+  "version": "1.0.0",
+  "description": "Fetches reddit data and exports randomly selected data to .csv",
+  "main": "index.js",
+  "repository": "git@github.com:soyoychoi/reddit-data-fetcher-js.git",
+  "author": "soyoychoi",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.25.0",
+    "fs": "^0.0.1-security",
+    "joi": "^17.4.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint . --ext .js"
+  }
+}
