@@ -112,11 +112,11 @@ class DataExporter {
         let csvString = `text,${customHeaders} \r\n`;
 
         for (let i = 0; i < data.length; i++) {
-            const strWithoutCommas = data[i].replace(/(\r?\n|\r)|(,)*/gm, "").trim();
-            if (!strWithoutCommas) {
+            const cleansedStr = data[i].replace(/(\r?\n|\r)|(,)*/gm, "").trim();
+            if (!cleansedStr) {
                 continue;
             }
-            csvString += `${strWithoutCommas} \r\n`;
+            csvString += `${cleansedStr} \r\n`;
         }
 
         return csvString;
