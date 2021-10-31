@@ -112,7 +112,8 @@ class DataExporter {
         let csvString = `text,${customHeaders} \r\n`;
 
         for (let i = 0; i < data.length; i++) {
-            const cleansedStr = data[i].replace(/(\r?\n|\r)|(,)*/gm, "").trim();
+            const cleansedStr = data[i].replace(/(\r?\n|\r)|(,)*/gm, "")
+                .replace(/'|’|"|_/gm, "").trim();
             if (!cleansedStr) {
                 continue;
             }
